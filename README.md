@@ -49,7 +49,7 @@ Mamadou_lamine_MBODJI_P32953_Sokhna_Gueye_MBENGUE_P312029_Maimouna_SOWP32321_Ahm
 
 1. **Cloner le dépôt**
    ```bash
-   git clone https://github.com/VOTRE-NOM-UTILISATEUR/sanarloc.git
+   git clone https://github.com/lamine899/SANARLOC-app.git
    ```
 
 2. **Ouvrir `index.html`** dans votre navigateur préféré.
@@ -64,7 +64,7 @@ Mamadou_lamine_MBODJI_P32953_Sokhna_Gueye_MBENGUE_P312029_Maimouna_SOWP32321_Ahm
 - Ahmed DIOUF
 - Coumba AMADOU NDIAYE
 
-**Encadrante** : Mme Awa DIATTARA  
+**Encadrante** : Mme Awa DIATTARA  DIOP
 **Université Gaston Berger de Saint-Louis – UFR SAT Section Informatique**
 
 ---
@@ -72,7 +72,7 @@ Mamadou_lamine_MBODJI_P32953_Sokhna_Gueye_MBENGUE_P312029_Maimouna_SOWP32321_Ahm
 ## 🌐 Déploiement en ligne
 
 👉 **Lien GitHub Pages :**
-[https://VOTRE-NOM-UTILISATEUR.github.io/sanarloc/](https://VOTRE-NOM-UTILISATEUR.github.io/sanarloc/)
+[https://VOTRE-NOM-UTILISATEUR.github.io/sanarloc/](https://lamine899.github.io/SANARLOC-app/)
 
 ---
 
