@@ -1,0 +1,3 @@
+[submodule "SANARLOC-app"]
+	path = SANARLOC-app
+	url = https://github.com/lamine899/SANARLOC-app.git
