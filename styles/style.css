@@ -1,0 +1,507 @@
+.accueil-header {
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  right: 0; 
+  z-index: 1000;
+  background: #005fa3;
+  padding: 0 5%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  font-family: cursive;
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.accueil-header ul{
+  display: flex;
+  list-style: none;
+  margin-right: 15vh;
+}
+
+.accueil-header ul li{
+  margin-right: 5vh;
+}
+
+.accueil-header ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  transition: .5s ease-in-out;
+}
+
+.accueil-header ul li a:hover{
+  color: #333;
+}
+
+.accueil-header .searchBar{
+  display: flex;
+}
+
+.accueil-header .searchBar input{
+  width: 70vh;
+  height: 6vh;
+  border: none;
+  border-radius: .3rem;
+  margin-right: 2vh;
+  padding-left: .7rem;
+  font-size: .9rem;
+}
+
+.accueil-header .searchBar button{
+  border: none;
+  border-radius: .3rem;
+  cursor: pointer;
+  background-color: white;
+  color: #005fa3;
+  font-weight: 500;
+  transition: .5s ease-in-out;
+}
+
+.accueil-header .searchBar button:hover{
+  background-color: #333;
+  border: 1px solid white;
+  color: white;
+}
+
+.cartes-accueil {
+  height: auto;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  padding-top: 15vh;
+  
+}
+
+.cartes-accueil .home-hero{
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.cartes-accueil .home-hero .btn-start{
+  padding: 0 9%;
+  margin-top: 2rem;
+}
+
+.cartes-accueil .home-hero .btn-start a{
+  background: #005fa3;
+  padding: 12px 30px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border-radius: .5rem;
+  transition: .5s ease-in-out;
+}
+
+.cartes-accueil .home-hero .btn-start a:hover{
+  background: black;
+  color: white;
+}
+
+.cartes-accueil .home-hero h2{
+  padding: 0 9%;
+  font-size: 2.3rem;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cartes-accueil .home-hero h2 span{
+  color: #005fa3;
+  font-family: cursive;
+}
+
+.cartes-accueil .home-hero p{
+  padding: 0 9%;
+  margin-top: -1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-accueil {
+  flex: 0 0 40%;
+  max-width: 40%;
+  overflow: hidden;
+  border-radius: 100%
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: defilement 12s infinite linear;
+  border-radius: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Animation de défilement */
+@keyframes defilement {
+  0% { transform: translateX(0%); }
+  33.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+
+
+.logement{
+  height: auto;
+  margin-top: 3rem;
+}
+
+.logement h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logement h2 span{
+  padding: 10px 30px;
+  color: white;
+  background: #005fa3;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.filter-buttons {
+  margin: 20px auto;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.filter-btn {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border: none;
+  border-radius: 6px;
+  background-color: #005fa3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: white;
+  color: #005fa3;
+}
+
+
+
+.logements{
+  width: 100%;
+  background: #005fa3;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: .5rem;
+}
+
+#containerLogement{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.logement-card {
+  background-color: #005fa3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.logement-card:hover {
+  transform: translateY(-5px);
+}
+
+.logement-card h3 {
+  margin-top: 0;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.logement-card p {
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+}
+
+.logement-card .voir-plus-btn{
+  color: red;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  background: white;
+  border: none;
+  color: #005fa3;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* caché par défaut */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* fond sombre */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#modal-body h2{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  color: #005fa3;
+}
+
+#modal-body p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+
+.reserver-btn{
+  background: #005fa3;
+  height: 2.5rem;
+  width: 13rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: .5rem;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.0rem;
+  cursor: pointer;
+}
+
+.apropos{
+  height: auto;
+  margin-top: 3rem;
+  
+}
+
+.apropos h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.apropos h2 span{
+  padding: 10px 30px;
+  color: white;
+  background: #005fa3;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.plan{
+  display: flex;
+  flex: 0 0 100%;
+  margin-top: 2rem;
+  gap: .5rem;
+}
+
+.part1{
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: .5rem;
+}
+
+.part1 h2{
+  text-align: initial;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #005fa3;
+}
+
+.part1 p{
+  text-align: initial;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #444;
+}
+
+.part2{
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: .5rem;
+}
+
+.part2 h2{
+  text-align: initial;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #005fa3;
+}
+
+
+.part2 p{
+  text-align: initial;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #444;
+  margin-top: .5rem;
+}
+
+.contact{
+  height: auto;
+  margin-top: 3rem;
+  
+}
+
+.contact h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact h2 span{
+  padding: 10px 30px;
+  color: white;
+  background: #005fa3;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+#contactForm{
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;
+  padding: 0 4%;
+}
+
+#contactForm label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactForm input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contactForm textarea{
+  width: 100%;
+  padding: 10px;
+  height: 5rem;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contactForm button{
+  padding: 10px 50px;
+  background-color: #005fa3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin: 1rem 0;
+}
+
+#contactForm button:hover{
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+#contactInfo p{
+  
+  margin: 30px 0;
+  line-height: 1.6;
+}
+
+#contactInfo p strong{
+  color: #005fa3;
+}
+
+.collaborer-avec-nous{
+  padding: 0 5%;
+  margin-top: 1rem;
+}
+
+.collaborer-avec-nous a{
+  padding: 12px 35px;
+  text-align: center;
+  align-items: center;
+  background: #005fa3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  transition: .5s ease-in-out;
+  border-radius: .5rem;
+  text-decoration: none;
+}
+
+.collaborer-avec-nous a:hover{
+  background: black;
+  color: white;
+}
+
+.footer{
+  border-top: 2.5px solid #005fa3;
+  height: 5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}

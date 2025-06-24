@@ -1,0 +1,157 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accueil – Logements à Sanar</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <header class="accueil-header">
+    <div class="logo">
+      <h2>SANARLOC</h2>
+    </div>
+    <div class="searchBar">
+      <input  id="searchInput" type="search" name="" id="" placeholder="Rechercher un logement, une localisation, une université...">
+      <button id="searchBtn"  type="submit">Rechercher</button>
+    </div>
+    <ul>
+      <li><a href="">Accueil</a></li>
+      <li><a href="#sectionLogement">Logements</a></li>
+      <li><a href="#sectionApropos">A propos</a></li>
+      <li><a href="#contactSection">Contacts</a></li>
+    </ul>
+  </header>
+
+  <section class="cartes-accueil">
+    <div class="home-hero">
+      <h2>Nous vous souhaitons la bienvenue <br> chez <span>SANARLOC</span></h2>
+      <p>Nous aidons les étudiants à trouver facilement des logements adaptés à leur budget, leur localisation et leur université.
+        Grâce à notre interface simple et intuitive, explorez des offres fiables dans les villes universitaires comme Dakar, Saint-Louis, Thiès, Bambey, Ziguinchor et bien d'autres.
+        Que vous cherchiez une chambre, un studio ou un appartement, <strong>SANARLOC</strong> vous propose des solutions pratiques et économiques.
+        Notre objectif est de simplifier la vie des étudiants en leur offrant un gain de temps et une tranquillité d’esprit.
+        Trouvez dès maintenant le logement idéal, proche de votre campus, en quelques clics !
+      </p>
+      <div class="btn-start"><a href="#sectionLogement">Visiter Maintenant !!</a></div>
+    </div>
+    <div class="image-accueil">
+      <div class="slider">
+        <img src="Images/téléchargement.jpeg" alt="" srcset="">
+        <img src="Images/image1.jpeg" alt="" srcset="">
+        <img src="Images/image2.jpeg" alt="" srcset="">
+        <img src="Images/image3.jpeg" alt="" srcset="">
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="sectionLogement" class="logement">
+    <h2>Nos <span>Offres de logements</span></h2>
+    <div class="logements">
+      <div class="filter-buttons">
+        <button class="filter-btn" data-type="all">Tous</button>
+        <button class="filter-btn" data-type="Studio">Studios</button>
+        <button class="filter-btn" data-type="Chambre">Chambres</button>
+        <button class="filter-btn" data-type="Colocation">Colocation</button>
+        <button class="filter-btn" data-type="Appartement">Appartements</button><br>
+        <br>
+           <h2><span> Top Annonces </span></h2>
+      </div>
+      <div id="containerLogement"></div>
+    </div>
+  </section>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+       <div id="modal-body">
+        </div>
+      </div>
+  </div>
+
+  <section id="sectionApropos" class="apropos">
+    <h2>Qui <span>Nous Sommes ?</span></h2>
+    <div class="plan">
+      <div class="part1">
+        <h2>🧭 Notre Mission</h2>
+        <p>
+          Chez SANARLOC, nous croyons que chaque étudiant mérite un logement digne, abordable et proche de son campus.
+          Notre mission est de rendre la recherche de logement simple, rapide et accessible à tous les étudiants du Sénégal.
+        </p>
+        
+      </div>
+
+      <div class="part2">
+        <h2>🙋‍♂️ À qui s’adresse la plateforme ?</h2>
+        <p>
+          🎓 Les étudiants en quête de logement <br>
+          👨‍👩‍👧‍👦 Les parents qui veulent aider à distance <br>
+          🏠 Les propriétaires désireux de proposer un logement étudiant
+        </p>
+      </div>
+    </div>
+    <div class="plan">
+      <div class="part1">
+        <h2>🔍 Ce que nous proposons</h2>
+        <p>
+          Une liste variée de logements pour toutes les grandes universités du pays. <br>
+          Des filtres intelligents pour affiner les recherches (type, localisation). <br>
+          Une interface claire et mobile-friendly. <br>
+          Des fiches logements avec photos, descriptions et distances du campus.
+        </p>
+        
+      </div>
+
+      <div class="part2">
+        <h2>🤝 Notre engagement</h2>
+        <p>
+          Nous veillons à ce que les logements affichés soient : <br>
+          fiables, 
+          géographiquement pertinents, 
+          et économiquement adaptés <br> aux étudiants. <br>
+          Notre but est de devenir le référent de la location étudiante au Sénégal.
+        </p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="contactSection" class="contact">
+    <h2>Nos <span>Contacts</span></h2>
+    <div class="plan">
+      <div class="part1">
+        <h2>📬 Contactez-nous</h2>
+        <form id="contactForm" action="" method="post">
+          <label for="">Nom et prénom</label>
+          <input type="text" name="" id="" required>
+          <label for="">E-mail</label>
+          <input type="email" name="" id="" required>
+          <label for="">Message</label>
+          <textarea name="" id="" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+      <div class="part2" id="contactInfo">
+        <h2>📞 Nos coordonnées</h2>
+        <p><strong>📱 Téléphone :</strong> +221 77 963 70 05 / 78 551 62 06</p>
+        <p><strong>📧 E-mail :</strong> contact@sanarloc.sn</p>
+        <p><strong>📍 Adresse :</strong> Sanar, Saint-Louis, Sénégal</p>
+        <p><strong>Disponibilté :</strong> lundi au samedi de 9h à 18h.</p>
+        <p><strong style="color: #333;">Pour les propriétaires désireux de proposer un logement aux étudiants</strong></p>
+        <div class="collaborer-avec-nous">
+          <a href="">N'hésiter pas, cliquer ici</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="footer">
+  <p>SanarLoc - &copy; 2025 Tous droits réservés</p>
+  <p>Version 1.0.0.2025</p>
+ </section>
+
+  <script src="donnees/logement.js"></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>
